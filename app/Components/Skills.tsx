@@ -14,9 +14,7 @@ const query = groq`
 export const dynamic = 'force-dynamic';
 const Skills = async  () => {
 
-  const data = await sanityClient.fetch(query,{
-    ca
-  })
+  const data = await sanityClient.fetch(query)
   // const val = 
   
   return (
