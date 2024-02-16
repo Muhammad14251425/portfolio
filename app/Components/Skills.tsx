@@ -11,7 +11,7 @@ import { NextRequest } from "next/server";
 const query = groq`
 *[_type == "skill"]
 `;
-export const dynamic = 'force-dynamic';
+export const revalidate = 30;
 const Skills = async  () => {
 
   const data = await sanityClient.fetch(query)

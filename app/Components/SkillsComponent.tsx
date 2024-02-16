@@ -9,7 +9,7 @@ type Iprops = {
   skills: Skille[]
 }
 
-export const dynamic = 'force-dynamic';
+export const revalidate = 30;
 const SkillsComponent = ({ skills }: Iprops) => {
 
 

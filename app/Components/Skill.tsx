@@ -10,7 +10,7 @@ type Props = {
     progress: number;
 }
 
-export const dynamic = 'force-dynamic';
+export const revalidate = 30;
 function Skill({ directionLeft, imageurl, progress }: Props) {
 
     console.log(progress);
