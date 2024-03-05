@@ -14,7 +14,8 @@ import { Experience, PageInfo, Project, Skille, Social } from '@/typings'
 type Props = {
 
 }
-
+export const revalidate = 30;
+export const dynamic = "force-static"
 function page({}: Props) {
   return (
     <div className='h-screen text-white snap-y snap-mandatory overflow-y-scroll overflow-x-hidden z-0 scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-red-500/80'>
